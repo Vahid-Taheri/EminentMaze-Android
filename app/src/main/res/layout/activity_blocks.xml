@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_blocks"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context="@drawable/splash_logo"
+	android:background="@color/colorPrimary"
+	android:theme="@style/AppTheme">
+
+	<ImageView
+		android:layout_height="200dp"
+		app:srcCompat="@drawable/splash_logo"
+		android:id="@+id/logo"
+		android:layout_width="200dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:text="Step2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/pageTitle"
+		android:textSize="45sp"
+		android:fontFamily="cursive"
+		android:textStyle="normal|bold"
+		android:textColor="#FFFFFF"
+		android:layout_below="@+id/logo"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="43dp"/>
+
+	<Button
+		android:text="Create random blocks by percentage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/random"
+		android:elevation="0dp"
+		android:typeface="sans"
+		android:layout_marginBottom="16dp"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"/>
+
+	<Button
+		android:text="Create blocks regularly (Recommended)"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/regular"
+		android:elevation="0dp"
+		android:typeface="sans"
+		android:layout_marginBottom="65dp"
+		android:layout_alignBottom="@+id/random"
+		android:layout_centerHorizontal="true"/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/percentage"
+		android:layout_above="@+id/create"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="25dp"
+		style="@style/inputBox"
+		android:hint="Percentage ..."
+		android:visibility="gone"
+		android:inputType="number"
+		android:numeric="integer"/>
+
+	<Button
+		android:text="Create"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/create"
+		android:visibility="gone"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

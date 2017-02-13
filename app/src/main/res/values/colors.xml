@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#01579b</color>
+	<color name="colorPrimaryDark">#003e6e</color>
+	<color name="colorAccent">#ab1801</color>
+
+	<color name="Empty">#ffffff</color>
+	<color name="Marked">#81D4FA</color>
+	<color name="Current">#17731b</color>
+	<color name="First">#b2ff59</color>
+	<color name="Finish">#ff0000</color>
+</resources>
